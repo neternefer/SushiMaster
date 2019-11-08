@@ -3,15 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-    
-.deck{
+section{
+    height: 100vh;
+    border: 2px solid yellow;
     display: flex;
-    margin: 0 auto;
-    align-items: center;
+}   
+.grid{
+    width: 640px;
+    height: 520px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    justify-content: space-evenly;
 }
 
-ul{
-    list-style-type: none;
-    display: flex;
+.card{
+    width: 140px;
+    height:140px;
+    border: 2px solid green;
+    position: relative;
+    align-self: center;
+}
+.card span{
+    position: absolute;
+    top:45%;
+    left: 45%;
 }
