@@ -6,13 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
     setBoard(cards);
     
 function setBoard(cards){
+    /*Shuffle the board by randomly assigning new order values
+    register click event
+    */
     for (const card of cards) {
-        let newPos = Math.ceil(Math.random() * 12)
-        card.style.order = newPos
+        let newPos = Math.ceil(Math.random() * 12);
+        card.style.order = newPos;
         card.addEventListener("click", onCardClicked);
     }
 }
 function flipCard(card) {
+    //Flip cards
     card.classList.toggle("flip");
 }
 function onCardClicked() {
@@ -28,6 +32,7 @@ function onCardClicked() {
         if (doCardsMatch()) {
             firstCard.removeEventListener("click", onCardClicked);
             secondCard.removeEventListener("click", onCardClicked);
+            //to są dwie linijki które w tej funkcji zmieniłam
             if(firstCard !== this){
                 removeMatched();
             }   
@@ -45,12 +50,14 @@ function onCardClicked() {
     gameOver();
 }
 function doCardsMatch() {
+    //Check if two cards match
     if (firstCard.dataset.sushi === secondCard.dataset.sushi) {
         return true;
     }
     return false;
 }
 function removeMatched(){
+    //Remove matching pait from board
     for(const c of [firstCard, secondCard]){
         c.classList.add("hide");
     }
@@ -58,6 +65,7 @@ function removeMatched(){
     secondCard = null;  
 }
 function gameOver(){
+    //Check if the board is empty - all cards have "hide" class
     const arr = Array.from(cards);
     const isBoardEmpty = arr.every((e) => e.classList.value.includes("hide"));
     if(isBoardEmpty){
@@ -65,6 +73,7 @@ function gameOver(){
     }
 }
 function newGame(){
+    //Change board's appeareance, add button for page reload
     const container = document.querySelector(".container");
     container.classList.add('gameOver');
     container.innerHTML = "<input type='button' value='Play again?'>";
