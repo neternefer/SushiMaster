@@ -7,7 +7,8 @@
 body {
   height: 100vh;
   display: flex;
-  background: purple;
+  background-image: url("img/bambooBg.jpg");
+  background-size: cover;
 }
 
 input[type="button"] {
