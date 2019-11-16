@@ -15,4 +15,4 @@ Game in progress             |  Finished game
 
 
 ## Play now
-https://neternefer.github.io/SushiMaster/
+[SushiMaster](https://neternefer.github.io/SushiMaster/)
