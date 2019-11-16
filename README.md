@@ -1,2 +1,3 @@
 # memoryGame
-Vanilla JS Memory Game
+
+Test your memory by matching our sushi rolls
