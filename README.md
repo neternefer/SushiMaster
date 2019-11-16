@@ -6,7 +6,7 @@
 * [Play now](#play-now)
 
 ## General info
-A simple game app created with Vanilla Javascript. Test your memory by matching our sushi rolls!
+A simple game app created with pure Javascript. Test your memory by matching our sushi rolls!
 
 ## Screenshots
 Game in progress             |  Finished game
