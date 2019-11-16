@@ -9,7 +9,7 @@
 A simple game app created with Vanilla Javascript. Test your memory by matching our sushi rolls!
 
 ## Screenshots
-![Game in progress](./images/schema.jpg)
-![Finished game](./images/schema.jpg)
+![Game in progress](./schreenshots/screen1.jpg)
+![Finished game](./screenshots/screen2.jpg)
 
 ## Play now
