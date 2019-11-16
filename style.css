@@ -7,7 +7,8 @@
 body {
   height: 100vh;
   display: flex;
-  background: purple;
+  background-image: url("img/bambooBg.jpg");
+  background-size: cover;
 }
 
 input[type="button"] {
@@ -25,7 +26,7 @@ input[type="button"] {
 
 @font-face{
   font-family: "JapanBrush";
-  src: url("./japan.ttf");
+  src: url("./japan.TTF");
 }
 
 input[type="button"]:hover {
